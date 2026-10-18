@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amrit Pal | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Top Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Animated Ambient Background -->
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Floating Glass Navbar -->
+    <header class="navbar-wrapper">
+        <nav class="navbar">
+            <a href="#" class="brand">AP<span>.</span></a>
+            <div class="nav-links">
+                <a href="#projects" class="nav-item">Work</a>
+                <a href="#skills" class="nav-item">Stack</a>
+                <a href="#experience" class="nav-item">Journey</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section with Interactive 3D Photo -->
+        <section class="hero reveal">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <div class="status-badge">
+                        <span class="pulse-dot"></span>
+                        <span>Available for Frontend Developer Roles</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Crafting fast, interactive <br>
+                        <span class="gradient-text" id="typewriter">web experiences.</span>
+                    </h1>
+                    <p class="hero-bio">
+                        I'm <strong>Amrit Pal</strong>, a Junior Frontend Developer with a B.Sc. in Computer Science
+                        from the University of Ioannina. I translate UI/UX designs into responsive, user-centric
+                        interfaces using HTML5, CSS3, and modern JavaScript, backed by hands-on IT systems experience.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Explore Selected Work</a>
+                        <a href="https://github.com/panagiotispal" target="_blank" rel="noopener"
+                            class="btn btn-glass">GitHub Profile</a>
+                    </div>
+                </div>
+
+                <!-- Interactive 3D Photo Card -->
+                <div class="hero-photo-wrapper">
+                    <div class="photo-card" id="photo-tilt">
+                        <div class="photo-glow"></div>
+                        <div class="photo-inner">
+                            <!-- Replace 'profile.jpg' with your actual photo filename -->
+                            <img src="amrit.png" alt="Amrit Pal - Frontend Developer" class="profile-img">
+                        </div>
+                        <div class="floating-badge badge-top">
+                            <span class="mono-code">B.Sc. Computer Science</span>
+                        </div>
+                        <div class="floating-badge badge-bottom">
+                            <span class="mono-code">Greece // Open to Remote</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section with Live Filter & Modal Inspector -->
+        <section id="projects" class="section">
+            <div class="section-header-row reveal">
+                <div>
+                    <span class="mono-tag">01 // PORTFOLIO</span>
+                    <h2>Featured Implementations</h2>
+                </div>
+                <!-- Interactive Filter Tabs -->
+                <div class="filter-tabs" role="tablist">
+                    <button class="filter-btn active" data-filter="all">All Work</button>
+                    <button class="filter-btn" data-filter="web">Frontend & Web</button>
+                    <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                    <button class="filter-btn" data-filter="software">Desktop & 3D</button>
+                </div>
+            </div>
+
+            <div class="bento-grid" id="projects-grid">
+                <!-- Project 1: Casa del Mar -->
+                <article class="bento-card span-2 reveal" data-category="web" data-project="casadelmar">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="project-type">Live Client Project</span>
+                            <div class="card-actions">
+                                <button class="inspect-btn" data-modal="casadelmar">Inspect Architecture</button>
+                                <a href="https://casa-del-mar.vercel.app/" target="_blank" rel="noopener"
+                                    class="external-link">Live Site ↗</a>
+                            </div>
+                        </div>
+                        <h3>Casa del Mar</h3>
+                        <p>
+                            Responsive landing page and interactive digital menu built for a hospitality client,
+                            featuring instant multi-language switching and mobile-first navigation.
+                        </p>
+                        <ul class="tech-pills">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Project 2: SubManage -->
+                <article class="bento-card reveal" data-category="fullstack" data-project="submanage">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="project-type">Full-Stack Web App</span>
+                            <div class="card-actions">
+                                <button class="inspect-btn" data-modal="submanage">Details</button>
+                                <a href="https://github.com/panagiotispal" target="_blank" rel="noopener"
+                                    class="external-link">GitHub ↗</a>
+                            </div>
+                        </div>
+                        <h3>SubManage</h3>
+                        <p>
+                            Subscription management platform tracking recurring billing cycles and predicting upcoming
+                            payments with Flask and MySQL.
+                        </p>
+                        <ul class="tech-pills">
+                            <li>Python (Flask)</li>
+                            <li>MySQL</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Project 3: MyPocket -->
+                <article class="bento-card reveal" data-category="software" data-project="mypocket">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="project-type">Desktop Application</span>
+                            <div class="card-actions">
+                                <button class="inspect-btn" data-modal="mypocket">Details</button>
+                                <a href="https://github.com/panagiotispal/pocket_mg" target="_blank" rel="noopener"
+                                    class="external-link">GitHub ↗</a>
+                            </div>
+                        </div>
+                        <h3>MyPocket Finance Tracker</h3>
+                        <p>
+                            Personal finance application built with object-oriented C# logic for automated transaction
+                            categorization and local SQL persistence.
+                        </p>
+                        <ul class="tech-pills">
+                            <li>C# (.NET)</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Project 4: Bachelor Thesis -->
+                <article class="bento-card span-2 reveal" data-category="software" data-project="thesis">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="project-type">Bachelor Thesis // 3D Application</span>
+                            <div class="card-actions">
+                                <button class="inspect-btn" data-modal="thesis">Inspect Architecture</button>
+                                <a href="https://github.com/panagiotispal" target="_blank" rel="noopener"
+                                    class="external-link">GitHub ↗</a>
+                            </div>
+                        </div>
+                        <h3>Interactive Course Evaluation</h3>
+                        <p>
+                            Gamified 3D environment designed to modernize student course evaluations. Engineered custom
+                            interaction mechanics, dialogue systems, and conducted user testing.
+                        </p>
+                        <ul class="tech-pills">
+                            <li>C++</li>
+                            <li>Unreal Engine 5</li>
+                            <li>Blueprints</li>
+                            <li>User Testing</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Interactive Technical Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-header reveal">
+                <span class="mono-tag">02 // INTERACTIVE STACK</span>
+                <h2>Technical Architecture</h2>
+                <p class="section-sub">Click any technology below to see how I apply it across my projects.</p>
+            </div>
+
+            <div class="interactive-skills reveal">
+                <div class="skill-pills-Interactive">
+                    <button class="skill-chip active" data-skill="HTML5 & CSS3"
+                        data-desc="Building semantic, accessible layouts, responsive grids, custom animations, and multi-device interfaces (Casa del Mar, SubManage).">HTML5
+                        & CSS3</button>
+                    <button class="skill-chip" data-skill="JavaScript (ES6+)"
+                        data-desc="DOM manipulation, dynamic state updates, interactive filtering, asynchronous events, and client-side logic.">JavaScript
+                        (ES6+)</button>
+                    <button class="skill-chip" data-skill="Bootstrap & Responsive UI"
+                        data-desc="Mobile-first component styling, cross-browser compatibility, and structured UI/UX user testing.">Bootstrap
+                        & Responsive UI</button>
+                    <button class="skill-chip" data-skill="Python (Flask) & REST APIs"
+                        data-desc="Routing, server-side rendering, backend business logic, and connecting web interfaces to relational databases (SubManage).">Python
+                        (Flask) & REST APIs</button>
+                    <button class="skill-chip" data-skill="MySQL & Relational DB"
+                        data-desc="Schema normalization, complex date-based billing queries, secure local data persistence, and data backup workflows.">MySQL
+                        & SQL</button>
+                    <button class="skill-chip" data-skill="C# (.NET) & C++"
+                        data-desc="Object-oriented desktop engineering (MyPocket Finance Tracker) and 3D interactive logic in Unreal Engine 5.">C#
+                        (.NET) & C++</button>
+                    <button class="skill-chip" data-skill="Git, GitHub & VS Code"
+                        data-desc="Version control, repository management, code debugging, and clean development workflows.">Git
+                        & GitHub</button>
+                </div>
+
+                <div class="skill-spotlight" id="skill-spotlight">
+                    <span class="mono-tag" id="spotlight-title">SELECTED // HTML5 & CSS3</span>
+                    <p id="spotlight-desc">Building semantic, accessible layouts, responsive grids, custom animations,
+                        and multi-device interfaces (Casa del Mar, SubManage).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="section">
+            <div class="section-header reveal">
+                <span class="mono-tag">03 // BACKGROUND</span>
+                <h2>Experience & Education</h2>
+            </div>
+
+            <div class="journey-grid">
+                <div class="timeline-wrapper reveal">
+                    <h3 class="column-title">Professional Trajectory</h3>
+                    <div class="timeline">
+                        <div class="timeline-card">
+                            <div class="timeline-dot"></div>
+                            <span class="time-badge">Jun 2025 – Nov 2025</span>
+                            <h4>IT Support Specialist (Military Service)</h4>
+                            <p class="org">Research & IT Department</p>
+                            <p class="desc">Administered critical software systems within a classified, high-security
+                                network environment, ensuring 24/7 availability and strict data protection compliance.
+                            </p>
+                        </div>
+
+                        <div class="timeline-card">
+                            <div class="timeline-dot"></div>
+                            <span class="time-badge">May 2024 – Nov 2024</span>
+                            <h4>IT Support Intern</h4>
+                            <p class="org">LOGIC DATA — Arta, Greece</p>
+                            <p class="desc">Delivered Level 1 & 2 technical support across diverse client hardware and
+                                software environments. Executed systematic data backup and recovery operations.</p>
+                        </div>
+
+                        <div class="timeline-card">
+                            <div class="timeline-dot"></div>
+                            <span class="time-badge">2019 – 2024</span>
+                            <h4>Hospitality & Service Staff</h4>
+                            <p class="org">Various Establishments</p>
+                            <p class="desc">Developed strong multitasking, rapid problem-solving, and clear
+                                communication under high-volume customer service demands.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-wrapper reveal">
+                    <h3 class="column-title">Academic & Honours</h3>
+                    <div class="timeline">
+                        <div class="timeline-card">
+                            <div class="timeline-dot"></div>
+                            <span class="time-badge">2020 – 2025</span>
+                            <h4>B.Sc. in Computer Science & Telecommunications</h4>
+                            <p class="org">University of Ioannina — Arta, Greece</p>
+                            <p class="desc">Core focus on web architectures, relational database design, object-oriented
+                                programming, and UI/UX evaluation.</p>
+                        </div>
+
+                        <div class="timeline-card">
+                            <div class="timeline-dot"></div>
+                            <span class="time-badge">May 2023</span>
+                            <h4>Smart Uni.City Hackathon</h4>
+                            <p class="org">"Designing the Future of the City"</p>
+                            <p class="desc">Collaborative rapid prototyping for smart urban solutions.</p>
+                        </div>
+
+                        <div class="timeline-card">
+                            <div class="timeline-dot"></div>
+                            <span class="time-badge">2023</span>
+                            <h4>Harvard CS50x Certificate</h4>
+                            <p class="org">CS50x Puzzle Day</p>
+                            <p class="desc">Algorithmic problem solving and logic certification.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Contact Banner -->
+        <section id="contact" class="section reveal">
+            <div class="contact-banner">
+                <span class="mono-tag">04 // DIRECT CONNECT</span>
+                <h2>Ready to contribute to your frontend team.</h2>
+                <p>Click my email below to copy it directly to your clipboard, or reach out via phone or GitHub.</p>
+                <div class="contact-actions">
+                    <button class="btn btn-primary" id="copy-email-btn" data-email="panosamrit@gmail.com">
+                        <span id="copy-text">Copy Email: panosamrit@gmail.com</span>
+                    </button>
+                    <a href="tel:+306989838706" class="btn btn-glass">+30 698 983 8706</a>
+                </div>
+                <div class="spoken-langs">
+                    <span>Greek (Native)</span> &bull; <span>Hindi (Native)</span> &bull; <span>English (Good)</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Architecture Modal -->
+    <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+        <div class="modal-window">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <span class="mono-tag" id="modal-tag">PROJECT ARCHITECTURE</span>
+            <h3 id="modal-title">Project Title</h3>
+            <p id="modal-description">Detailed overview.</p>
+            <h4 class="modal-subtitle">Key Engineering Highlights</h4>
+            <ul class="modal-list" id="modal-highlights"></ul>
+            <div class="modal-footer">
+                <a href="#" id="modal-link" target="_blank" rel="noopener" class="btn btn-primary">Open Project ↗</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-flex">
+            <p>&copy; 2026 Amrit Pal. Built with HTML5, CSS3 & Vanilla JavaScript.</p>
+            <div class="footer-links">
+                <a href="https://github.com/panagiotispal" target="_blank" rel="noopener">GitHub</a>
+                <a href="mailto:panosamrit@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
